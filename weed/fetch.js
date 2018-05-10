@@ -20,15 +20,17 @@ fetch(url)
                 img = createNode('img'),
                 div = createNode('div'),
                 div2 = createNode('div'),
-                div3 = createNode('div');
+                div3 = createNode('div'),
+                flower = createNode('img');
 
 
+            flower.src='1.jpg';
             img.src = weed.images.cropped_image;
             div.innerHTML = `${weed.brand} `;
             div2.innerHTML = `${weed.product_name}`;
             div3.innerHTML = `${weed.classifications}`;
 
-
+            append(li, flower);
             append(li, img);
             append(li, div);
             append(li, div2);
@@ -37,6 +39,7 @@ fetch(url)
 
             div2.className='name';
             div3.className='type';
+            flower.className='flower'
 
         })
     })
