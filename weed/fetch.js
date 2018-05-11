@@ -52,25 +52,27 @@ fetch(url)
             append(ul, li);
 
 
+
+
+            switch(div3.textContent){
+                case 'CBD':
+                    div3.className='cbd';
+                    break;
+
+                case 'S/I':
+                    div3.className='si';
+                    break;
+
+                case 'INDICA':
+                    div3.className='indica';
+                    break;
+                default: div3.className='type';
+            }
+
+
             div.className='brand';
             div2.className='name';
-
-
-            if(div3.textContent==='CBD'){
-                div3.className='cbd';
-            }
-            else if(div3.textContent==='S/I'){
-                div3.className='si';
-            }
-            else if(div3.textContent==='INDICA'){
-                div3.className='indica';
-            }
-            else {
-                div3.className='type';
-            }
-
             flower.className='flower';
-
             span2.className='price';
             span1.className='bucks';
             span3.className='gramm';
