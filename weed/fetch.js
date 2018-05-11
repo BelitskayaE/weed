@@ -22,7 +22,7 @@ fetch(url)
                 div2 = createNode('div'),
                 div3 = createNode('div'),
                 flower = createNode('img'),
-                span1 = createNode('span'),
+                span1 = createNode('sup'),
                 span2 = createNode('span'),
                 span3 = createNode('span');
 
