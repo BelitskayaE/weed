@@ -10,7 +10,7 @@ function append(parent, el) {
 
 
 const ul = document.getElementById('section');
-const url = 'https://api.treez.io/v1.0/dispensary/goe/menu/product_list?type=all&offset=0&limit=600';
+const url = 'https://api.treez.io/v1.0/dispensary/airfield/menu/product_list?type=all&offset=0&limit=600&stock=all';
 fetch(url)
     .then((resp) => resp.json())
     .then(function(data) {
@@ -21,7 +21,10 @@ fetch(url)
                 div = createNode('div'),
                 div2 = createNode('div'),
                 div3 = createNode('div'),
-                flower = createNode('img');
+                flower = createNode('img'),
+                span1 = createNode('span'),
+                span2 = createNode('span'),
+                span3 = createNode('span');
 
 
             flower.src='1.jpg';
@@ -29,22 +32,43 @@ fetch(url)
             div.innerHTML = `${weed.brand} `;
             div2.innerHTML = `${weed.product_name}`;
             div3.innerHTML = `${weed.classifications}`;
+            span1.innerHTML= '$';
+            for( let i=0; i < weed.size_list.length;i++){
+
+                    span2.innerHTML = ` ${Math.ceil(weed.size_list[i].price_sell)} `;
+
+
+            }
+            span3.innerHTML= '/0.5g';
 
             append(li, flower);
             append(li, img);
             append(li, div);
             append(li, div2);
             append(li, div3);
+            append(li, span1);
+            append(li, span2);
+            append(li, span3);
             append(ul, li);
 
+
+            div.className='brand';
+
             div2.className='name';
+
             div3.className='type';
-            flower.className='flower'
+
+
+            flower.className='flower';
+
+            span2.className='price';
+            span1.className='bucks';
+            span3.className='gramm';
 
         })
     })
 
 
     .catch(function(error) {
-        console.log(JSON.stringify(error));
+        console.log(JSON.parse(error));
     });
