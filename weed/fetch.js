@@ -53,11 +53,21 @@ fetch(url)
 
 
             div.className='brand';
-
             div2.className='name';
 
-            div3.className='type';
 
+            if(div3.textContent==='CBD'){
+                div3.className='cbd';
+            }
+            else if(div3.textContent==='S/I'){
+                div3.className='si';
+            }
+            else if(div3.textContent==='INDICA'){
+                div3.className='indica';
+            }
+            else {
+                div3.className='type';
+            }
 
             flower.className='flower';
 

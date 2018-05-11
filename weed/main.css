@@ -39,7 +39,7 @@ header img {
 li img {
   width: 100%;
   height: 400px;
- }
+}
 
 ul {
   width: 100%;
@@ -70,7 +70,7 @@ li {
   width:20%;
   border-radius: 10%;
   text-align: center;
-  }
+}
 
 .brand{
   font-size:15px;
@@ -92,7 +92,7 @@ li {
 
 .bucks{
   color:#848484;
-  font-size:13px;
+  font-size:15px;
 }
 
 .gramm{
@@ -100,6 +100,32 @@ li {
   font-size:13px;
 }
 
+.cbd{
+  background:#0489B1;
+  color: #E6E6E6;
+  font-size: 13px;
+  width:20%;
+  border-radius: 10%;
+  text-align: center;
+}
+
+
+.si{
+  background:#FE9A2E;
+  color: #E6E6E6;
+  font-size: 13px;
+  width:20%;
+  border-radius: 10%;
+  text-align: center;
+}
+.indica{
+  background:#F781D8;
+  color: #E6E6E6;
+  font-size: 13px;
+  width:20%;
+  border-radius: 10%;
+  text-align: center;
+}
 
 
 @media  (max-width: 960px) {
@@ -108,5 +134,6 @@ li {
     height: 250px;
   }
 }
+
 
 /*# sourceMappingURL=main.css.map */
