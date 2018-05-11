@@ -101,13 +101,32 @@ li {
 }
 
 .cbd{
-  background:red;
+  background:#0489B1;
   color: #E6E6E6;
   font-size: 13px;
   width:20%;
   border-radius: 10%;
   text-align: center;
 }
+
+
+.si{
+  background:#FE9A2E;
+  color: #E6E6E6;
+  font-size: 13px;
+  width:20%;
+  border-radius: 10%;
+  text-align: center;
+}
+.indica{
+  background:#F781D8;
+  color: #E6E6E6;
+  font-size: 13px;
+  width:20%;
+  border-radius: 10%;
+  text-align: center;
+}
+
 
 @media  (max-width: 960px) {
   li img {
